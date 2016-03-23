@@ -215,6 +215,7 @@ class FormFactory(object):
                     '6 hour',
                     '1 day',
                     '7 days',
+                    # you could add a special string here
                 ]),
                 description=(
                     "The time granularity for the visualization. Note that you "
@@ -529,6 +530,7 @@ class FormFactory(object):
             async = HiddenField()
             force = HiddenField()
             extra_filters = HiddenField()
+            druid_time_origin = HiddenField()
             json = HiddenField()
             slice_id = HiddenField()
             slice_name = HiddenField()
